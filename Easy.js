@@ -5,6 +5,7 @@ let quotient;
 let answer;
 let negOrPos;
 let firstOneOrTwo;
+let choice;
 let correctGuesses = 0;
 let counter = 0;
 function generate() {
@@ -112,6 +113,10 @@ function moveB() {
 function moveC() {
     if (correct === 2) {
         correctGuesses += 1;
+    }
+    if (counter >= 10) {
+        stopGame();
+        return
     }
     counter += 1;
     correct = generate();
