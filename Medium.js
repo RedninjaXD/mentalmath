@@ -5,6 +5,7 @@ let quotient;
 let answer;
 let negOrPos;
 let firstOneOrTwo;
+let choice;
 let correctGuesses = 0;
 let counter = 1;
 function generate () {
