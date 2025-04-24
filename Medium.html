@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Mental Math</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <header>
+                <a href="website.html" class="title">
+                    <h1 id="headertext">Mental Math</h1>
+                </a>
+                <nav>
+                    <ul>
+                      <li><a href="Easy.html">Easy</a></li>
+                      <li><a style="font-size: 20px; background-color: #2f1046;" href="Medium.html">Medium</a></li>
+                      <li><a href="Hard.html">Hard</a></li>
+                    </ul>
+                  </nav>
+            </header>
+            <p class="mode"><b>Medium</b></p>
+            <div id="mainContent">
+                <p class="sideInfo" style="margin-right: 0;">000</p>
+                <div class="playButton1">
+                    <p class="gameText1" id="question">1+1</p>
+                    <div class="choices1" style="font-size: 100px;">
+                        <button class="buttons1" id="buttonA" onclick="moveA()">1</button>
+                        <button class="buttons1" id="buttonB" onclick="moveB()">2</button>
+                        <button class="buttons1" id="buttonC" onclick="moveC()">3</button>
+                    </div>
+                </div>
+                <p class="sideInfo" style="margin-left: 0;" id="correctGuesses">0/10</p>
+            </div>
+            <footer style="margin-top: 300px;">
+                <p id="footer">©2025 Redninja</p>
+            </footer>
+            <script src="Medium.js"></script>
+        </body>
+    </html>
